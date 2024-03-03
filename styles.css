@@ -109,5 +109,10 @@ footer {
     .studentTreeContainer {
       font-size: 14px; /* Adjust font size for better readability on small screens */
     }
+   img {
+                /* Adjust width to fit smaller screens */
+                width: 100%;
+                /* You can also adjust other styles like margin or padding here */
+            }
 }
  
