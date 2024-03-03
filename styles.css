@@ -82,6 +82,11 @@ td {
 #records {
   margin-top: 20px;
 }
+footer {
+      color: black;
+      text-align: center;
+      padding: 10px 0;
+    }
 /* Responsive styles */
 @media screen and (max-width: 600px) {
   .container {
