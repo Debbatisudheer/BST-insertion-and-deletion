@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Records</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Records</h1>
+    <div class="menu">
+      <button onclick="showInsertForm()">Insert</button>
+      <button onclick="showDeleteForm()">Delete</button>
+      <button onclick="displayRecords()">Display All</button>
+    </div>
+    <div id="insertForm" style="display: none;">
+      <label for="insertId">Enter Student ID:</label>
+      <input type="number" id="insertId">
+      <label for="insertName">Enter Student Name:</label>
+      <input type="text" id="insertName">
+      <label for="insertInfo">Additional Info:</label>
+      <input type="text" id="insertInfo">
+      <button onclick="insertRecord()">Insert</button>
+    </div>
+    <div id="searchForm" style="display: none;">
+      <label for="searchId">Enter Student ID:</label>
+      <input type="number" id="searchId">
+      <button onclick="searchRecord()">Search</button>
+    </div>
+    <div id="deleteForm" style="display: none;">
+      <label for="deleteId">Enter Student ID to Delete:</label>
+      <input type="number" id="deleteId">
+      <button onclick="deleteRecord()">Delete</button>
+    </div>
+    <table id="records" style="display: none;">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Additional Info</th>
+        </tr>
+      </thead>
+      <tbody id="recordsTableBody"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
