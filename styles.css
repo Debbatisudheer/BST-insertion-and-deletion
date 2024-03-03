@@ -87,6 +87,10 @@ footer {
       text-align: center;
       padding: 10px 0;
     }
+.studentTreeContainer {
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  white-space: nowrap; /* Prevent wrapping of tree lines */
+}
 /* Responsive styles */
 @media screen and (max-width: 600px) {
   .container {
